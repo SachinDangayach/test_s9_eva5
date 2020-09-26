@@ -58,14 +58,14 @@ def get_album_transforms(norm_mean,norm_std):
                                           A.Normalize(
                                              mean=[0.49, 0.48, 0.45],
                                               std=[0.25, 0.24, 0.26], ),
-                                          AP.ToTensorV2()
+                                          AP.transforms.ToTensorV2()
                                         ])
 
     album_test_transform = A.Compose([A.Resize(224, 224),
                                           A.Normalize(
                                              mean=[0.49, 0.48, 0.45],
                                               std=[0.25, 0.24, 0.26], ),
-                                          AP.ToTensorV2()
+                                          AP.transforms.ToTensorV2()
                                         ])
     return(album_train_transform,album_test_transform)
 
