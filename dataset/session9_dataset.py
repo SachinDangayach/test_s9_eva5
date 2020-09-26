@@ -5,7 +5,7 @@ import torchvision.transforms as transforms
 import numpy as np
 
 import albumentations as A
-from   albumentations.pytorch import ToTensorV2
+# from   albumentations.pytorch import ToTensorV2
 from   torch.utils.data import Dataset
 
 class AlbumentationsDataset(Dataset):
